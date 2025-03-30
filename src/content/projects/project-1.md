@@ -1,6 +1,6 @@
 ---
-title: 'UT1_PD1'
-description: .
+title: 'Ejercicios Domiciliarios UT1'
+description: 
 publishDate: 'Mar 30 2025'
 seo:
   image:
@@ -10,17 +10,41 @@ seo:
 
 ![Project preview](/project-1.jpg)
 
-**Note:** Que cambio hago aca
-[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
 
-**Project Overview:**
-Sigo pensando que hace esto
+## Ejercicio 1
 
-## Parte 1?
+**Letra del ejercicio**
 
-1. Develop a user-friendly mobile app that motivates individuals to adopt sustainable practices in their daily lives.
-2. Utilize gamification elements to make sustainable living fun and interactive.
-3. Provide educational resources and personalized challenges to empower users to make informed eco-conscious decisions.
+*Dado el siguiente programa:
+    public static void zoop () {
+    baffle ();
+    System.out.print ("Vos zacata ");
+    baffle ();
+    }
+    public static void main (String[] args) {
+    System.out.print ("No, yo ");
+    zoop ();
+    System.out.print ("Yo ");
+    baffle ();
+    }
+    public static void baffle () {
+    System.out.print ("pac");
+    ping ();
+    }
+    public static void ping () {
+    System.out.println (".");
+    }
+¿Cuál es la salida? Sé preciso acerca de dónde hay espacios y dónde hay nuevas líneas.
+Indicar cuál es la respuesta más correcta: (\n denota nueva línea)*
+
+**Solucion**
+
+'''kotlin
+fun main(){
+  println("No, yo pac.\n Vos zacata pac.\n Yo pac.")
+}
+'''
+
 
 ## Features
 
@@ -59,9 +83,3 @@ Sigo pensando que hace esto
 ## Outcome
 
 EcoBuddy has successfully created a community of environmentally conscious individuals who actively participate in sustainable living practices. The app not only educates and motivates users but also provides tangible rewards for their commitment to a greener lifestyle, fostering a positive impact on the environment.
-
-## Client Testimonial
-
-> Esto me parece interesante.
-
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
