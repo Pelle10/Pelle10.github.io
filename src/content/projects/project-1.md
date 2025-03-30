@@ -167,10 +167,10 @@ public class Alumno {
   }
 ```
 
-a) Indicar el error al ejecutar la clase Alumno y corregirlo. ¿cómo lo detectaste?
-b) Indicar el error al ejecutar el método “recorrer” y corregirlo. ¿cómo lo detectaste?
-c) Indicar el error al ejecutar el método “getValor” y corregirlo. ¿cómo lo detectaste?
-d) Indicar el error al ejecutar el método “getPrimerCaracter” y corregirlo. ¿cómo lo detectaste?
+a) Indicar el error al ejecutar la clase Alumno y corregirlo. ¿cómo lo detectaste?\n
+b) Indicar el error al ejecutar el método “recorrer” y corregirlo. ¿cómo lo detectaste?\n
+c) Indicar el error al ejecutar el método “getValor” y corregirlo. ¿cómo lo detectaste?\n
+d) Indicar el error al ejecutar el método “getPrimerCaracter” y corregirlo. ¿cómo lo detectaste?\n
 e) Indicar el error al ejecutar el método “paraAString” y corregirlo. ¿cómo lo detectaste?
 
 ```kotlin
@@ -240,7 +240,7 @@ public class Contador {
     // Método con while
     public void mostrarContadorWhile() {
         System.out.println("Usando while:");
-        contador = 1; // Reiniciar contador
+        contador = 1; 
         while (contador <= MAX_CONT) {
             System.out.println(contador);
             contador += incremento;
@@ -250,7 +250,7 @@ public class Contador {
     // Método con do-while
     public void mostrarContadorDoWhile() {
         System.out.println("Usando do-while:");
-        contador = 1; // Reiniciar contador
+        contador = 1; 
         do {
             System.out.println(contador);
             contador += incremento;
