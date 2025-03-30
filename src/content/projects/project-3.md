@@ -1,64 +1,209 @@
 ---
-title: 'RoboChef - AI Powered Cooking Guide'
-description: RoboChef Recipe Assistant is a groundbreaking mobile application that leverages artificial intelligence to redefine the cooking experience.
-publishDate: 'Oct 12 2023'
+title: 'Ejercicios UT1_PD5'
+description: Ejercicios del UT1_PD5
+publishDate: 'Mar 30 2025'
 isFeatured: true
 seo:
   image:
     src: '/project-3.jpg'
 ---
 
-![Project preview](/project-3.jpg)
+## Ejercicio 1
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+# Letra del ejercicio
 
-**Project Overview:**
-RoboChef Recipe Assistant is a groundbreaking mobile application that leverages artificial intelligence to redefine the cooking experience. By combining machine learning with culinary expertise, RoboChef empowers users to explore a world of flavors, improve their cooking skills, and enjoy personalized recipe recommendations.
+La declaración “enum” define una clase (llamada tipo enumerado). El cuerpo de esta clase
+puede incluir métodos y otros campos. En particular, el compilador automáticamente agrega
+algunos métodos especiales cuando crea un enum. Por ejemplo, tiene un método de valores
+estáticos que retorna un array que contiene todos los valores del enum en el orden en que
+fueron declarados.
+1) Escribe un ejemplo de uso de tal método, y asegúrate de comprender cómo funciona!!
+2) Teniendo presente el programa que tu Equipo escribió para contar vocales y
+consonantes en una cierta frase, ¿cómo podrías escribirlo nuevamente utilizando tipos
+enumerados?
 
-## Objectives
+**Solucion**
+1) 
+```kotlin
+public class EnumEjemplo {
+    public enum Dia {
+        LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
+    }
 
-1. Develop a user-friendly mobile app that utilizes AI to provide personalized recipe suggestions based on user preferences, dietary restrictions, and available ingredients.
-2. Create an interactive cooking guide that assists users with step-by-step instructions, cooking tips, and real-time assistance.
-3. Implement a smart learning system that refines recommendations over time, adapting to users' taste preferences and dietary changes.
+    public static void main(String[] args) {
+        for (Dia d : Dia.values()) {
+            System.out.println(d);
+        }
+    }
+}
+```
+2) 
+```kotlin
+public class ContadorLetras {
 
-## Features
+    public static void main(String[] args) {
+        String frase = "Hola Mundo!";
+        int vocales = 0, consonantes = 0;
 
-1. **AI-Powered Recipe Recommendations:**
+        for (int i = 0; i < frase.length(); i++) {
+            char c = Character.toLowerCase(frase.charAt(i));
 
-- RoboChef analyzes users' taste preferences, dietary restrictions, and ingredient availability to suggest personalized recipes.
-- Machine learning algorithms continuously learn from user interactions, refining recommendations for an increasingly tailored experience.
+            if ("aeiou".indexOf(c) != -1) { // Es una vocal
+                vocales++;
+            } else if (Character.isLetter(c)) { // Es una consonante
+                consonantes++;
+            }
+        }
 
-2. **Ingredient Scanner and Inventory Management:**
+        System.out.println("Vocales: " + vocales);
+        System.out.println("Consonantes: " + consonantes);
+    }
+}
+```
 
-- Users can scan their pantry and refrigerator using the app's built-in ingredient scanner.
-- RoboChef provides recipe suggestions based on available ingredients and helps users manage their inventory by suggesting recipes that utilize soon-to-expire items.
+## Ejercicio 2
 
-3. **Step-by-Step Cooking Guide:**
+**Letra del ejercicio**
 
-- Each recipe includes a detailed step-by-step cooking guide with interactive multimedia elements.
-- Users can watch video tutorials, view images, and receive real-time tips from RoboChef as they progress through each cooking stage.
+dado el siguiente código fuente:
+```kotlin
+public class ValueOfDemo {
+  public static void main(String[] args) {
 
-4. **Nutritional Insights and Meal Planning:**
+      // this program requires two
+      // arguments on the command line
+      if (args.length == 3) {
+        // convert strings to numbers
+        float a = (Float.value (args[0])).floatValue();
+        float b = (Float.valueOf(args[1])).float ();
 
-- RoboChef provides nutritional information for each recipe, helping users make informed decisions about their meals.
-- The app offers meal planning features, allowing users to create weekly menus based on dietary goals and preferences.
+        // do some arithmetic
+        System.out.println("a + b = " +
+        (a + b));
+        System.out.println("a - b = " +
+        (a - b));
+        System.out.println("a * b = " +
+        (a * b));
+        System.out.println("a / b = " +
+        (a / b));
+        System.out.println("a % b = " +
+        (a % b));
+    } else {
+      System.out.println("This program " +
+        "requires two command-line arguments.");
+    }
+  }
+}
+```
+1) Verificar que funciona correctamente e indicar cuál es la salida cuando se invoca con
+parámetros 13.4 y 66.1
+2) ¿cómo debería modificarse el código si los parámetros de línea de comando fueran
+solamente enteros positivos?
 
-5. **Voice-Activated Assistance:**
+**Solucion**
+1) 
+```kotlin
+//salidas
+a + b = 79.5
+a - b = -52.699997
+a * b = 885.7399
+a / b = 0.20272315
+a % b = 13.4
+```
 
-- Users can interact with RoboChef using voice commands for a hands-free cooking experience.
-- The AI assistant responds to queries, provides cooking tips, and adapts recipes based on user preferences.
+2) En vez de utilizar float usar integer, y utilizar division entera.
 
-## Technology Stack
+## Ejercicio 3
 
-- Frontend: Flutter for a seamless cross-platform mobile app experience.
-- Backend: Django for handling server-side logic and API integration.
-- Database: PostgreSQL for efficient data storage and retrieval.
-- AI Integration: TensorFlow for machine learning models powering recipe recommendations.
+**Letra del ejercicio**
 
-> Ethan Donovan possesses a rare blend of technical expertise and creative flair. They skillfully transformed our vague ideas into a visually stunning and highly functional website. The end result exceeded our expectations, and we continue to receive compliments on the design and user experience.
+Dado el siguiente código:
+```kotlin
+public class ToStringDemo {
+  public static void main(String[] args) {
+    double d = 888.51;
+    String s = Double.toString(d);
 
-## Outcome
+    int dot = s.indexOf('.');
+    System.out.println(dot + " digits " +
+      "before decimal point.");
+    System.out.println( (s.length() - dot - 1) +
+      " digits after decimal point.");
+  }
+}
+```
+1) Indicar cuál es la salida obtenida al ejecutarlo.
+2) Indicar por qué se imprime cada uno de los datos y la razón de su forma
 
-RoboChef Recipe Assistant has revolutionized the way users approach cooking, making it an enjoyable and educational experience. The AI-powered features not only simplify the cooking process but also contribute to users' culinary growth, creating a personalized and evolving cooking journey.
+**Solucion**
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+1) Salida:
+```kotlin
+3 digits before decimal point.
+2 digits after decimal point.
+```
+2) Toma el número 888.51 y lo convierte en letras: "888.51",
+Cuenta las letras hasta encontrar el punto:
+
+Posición 0: '8'
+
+Posición 1: '8'
+
+Posición 2: '8'
+
+Posición 3: '.' (aquí está el punto).
+Guarda el número 3 porque el punto está en la tercera posición.
+
+Cuenta los digitos antes del punto (3).
+
+Cuenta los digitos despues del punto, la cadena tiene 6 letras, resta la posicion
+del punto y el punto mismo y da que hay 2 digitos despues.
+
+### Ejercicio 4
+
+# Letra del ejercicio
+
+¿Cuál es la capacidad inicial del siguiente stringbuilder?
+```kotlin
+StringBuilder sb = new StringBuilder("Able was I ere I saw Elba.");
+```
+**Solucion**
+
+Longitud del string: "Able was I ere I saw Elba." tiene 24 caracteres (incluyendo espacios y punto).
+
+Capacidad inicial = 16 + 24 = 40.
+
+Entonces la siguiente sera 40
+
+## Ejercicio 5
+
+**Letra del ejercicio**
+
+Considere la siguiente string:
+```kotlin
+String hannah = "Did Hannah see bees? Hannah did.";
+```
+a) ¿qué valor muestra la expresión “hannah.length”?
+b) ¿qué valor es retornado por la invocación del método “hannah.charAt(12)”?
+c) Escribe una expresión que referencie la letra “b” en la string referida por “hannah".
+
+**Solucion**
+
+a) 32
+
+b) "e"
+
+c) hannah.charAt(15)
+
+## Ejercicio 6
+
+**letra del ejercicio**
+
+¿Cuán larga es las string devuelta por la siguiente expresión? ¿cuál es la string?
+```kotlin
+"Was it a car or a cat I saw?".substring(9, 12)
+```
+
+**Solucion**
+
+La string devuelta es car y tiene largo 3.

@@ -22,12 +22,14 @@ public class IdentifyMyParts {
 }
 ```
 a) ¿Cuáles son las variables de clase?
+
 b) ¿Cuáles son las variables de instancia?
 
 **Solucion**
 
--a) x
--b) y
+a) x
+
+b) y
 
 ¿Cuál es la salida que produce el siguiente código?
 ```kotlin
