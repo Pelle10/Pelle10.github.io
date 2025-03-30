@@ -8,9 +8,9 @@ seo:
     src: '/project-3.jpg'
 ---
 
-## Ejercicio 1
+# Ejercicio 1
 
-# Letra del ejercicio
+## Letra del ejercicio
 
 La declaración “enum” define una clase (llamada tipo enumerado). El cuerpo de esta clase
 puede incluir métodos y otros campos. En particular, el compilador automáticamente agrega
@@ -61,7 +61,7 @@ public class ContadorLetras {
 }
 ```
 
-## Ejercicio 2
+# Ejercicio 2
 
 **Letra del ejercicio**
 
@@ -113,7 +113,7 @@ a % b = 13.4
 
 2) En vez de utilizar float usar integer, y utilizar division entera.
 
-## Ejercicio 3
+# Ejercicio 3
 
 **Letra del ejercicio**
 
@@ -159,9 +159,9 @@ Cuenta los digitos antes del punto (3).
 Cuenta los digitos despues del punto, la cadena tiene 6 letras, resta la posicion
 del punto y el punto mismo y da que hay 2 digitos despues.
 
-### Ejercicio 4
+# Ejercicio 4
 
-# Letra del ejercicio
+**Letra del ejercicio**
 
 ¿Cuál es la capacidad inicial del siguiente stringbuilder?
 ```kotlin
@@ -175,7 +175,7 @@ Capacidad inicial = 16 + 24 = 40.
 
 Entonces la siguiente sera 40
 
-## Ejercicio 5
+# Ejercicio 5
 
 **Letra del ejercicio**
 
@@ -195,7 +195,7 @@ b) "e"
 
 c) hannah.charAt(15)
 
-## Ejercicio 6
+# Ejercicio 6
 
 **letra del ejercicio**
 
