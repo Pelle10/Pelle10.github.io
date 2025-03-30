@@ -2,13 +2,14 @@
 title: 'Ejercicios Domiciliarios UT1'
 description: Ejercicios del UT1_PD1 al UT1_PD10
 publishDate: 'Mar 30 2025'
+isFeatured: true
 seo:
   image:
-    src: '/project-1.jpg'
+    src: 'project-7.jpg'
     alt: Project preview
 ---
 
-![Project preview](/project-1.jpg)
+![Project preview](/project-7.jpg)
 
 
 ## PD1_Ejercicio 1
