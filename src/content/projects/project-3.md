@@ -63,7 +63,7 @@ public class ContadorLetras {
 
 # Ejercicio 2
 
-**Letra del ejercicio**
+## Letra del ejercicio
 
 dado el siguiente código fuente:
 ```kotlin
@@ -115,7 +115,7 @@ a % b = 13.4
 
 # Ejercicio 3
 
-**Letra del ejercicio**
+## Letra del ejercicio
 
 Dado el siguiente código:
 ```kotlin
@@ -161,7 +161,7 @@ del punto y el punto mismo y da que hay 2 digitos despues.
 
 # Ejercicio 4
 
-**Letra del ejercicio**
+## Letra del ejercicio
 
 ¿Cuál es la capacidad inicial del siguiente stringbuilder?
 ```kotlin
@@ -177,7 +177,7 @@ Entonces la siguiente sera 40
 
 # Ejercicio 5
 
-**Letra del ejercicio**
+## Letra del ejercicio
 
 Considere la siguiente string:
 ```kotlin
@@ -197,7 +197,7 @@ c) hannah.charAt(15)
 
 # Ejercicio 6
 
-**letra del ejercicio**
+## letra del ejercicio
 
 ¿Cuán larga es las string devuelta por la siguiente expresión? ¿cuál es la string?
 ```kotlin
