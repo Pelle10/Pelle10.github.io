@@ -21,6 +21,7 @@ export type SiteConfig = {
     logo?: Image;
     title: string;
     subtitle?: string;
+    description: string;
     image?: Image;
     headerNavLinks?: Link[];
     footerNavLinks?: Link[];
@@ -33,6 +34,7 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     title: 'Santiago Pellejero',
     subtitle: 'Portfolio Algoritmos y Estructuras de datos',
+    description: 'Primer semestre año 2025',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
