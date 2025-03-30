@@ -1,6 +1,6 @@
 ---
 title: 'Ejercicios Domiciliarios UT1'
-description: 
+description: Ejercicios del UT1_PD1 al UT1_PD10
 publishDate: 'Mar 30 2025'
 seo:
   image:
