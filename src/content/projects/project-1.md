@@ -16,7 +16,9 @@ seo:
 **Letra del ejercicio**
 
 *Dado el siguiente programa:
-    public static void zoop () {
+```
+fun main(){
+    println("public static void zoop () {
     baffle ();
     System.out.print ("Vos zacata ");
     baffle ();
@@ -33,17 +35,19 @@ seo:
     }
     public static void ping () {
     System.out.println (".");
-    }
+    }")
+}
+```
 ¿Cuál es la salida? Sé preciso acerca de dónde hay espacios y dónde hay nuevas líneas.
 Indicar cuál es la respuesta más correcta: (\n denota nueva línea)*
 
 **Solucion**
 
-'''kotlin
+```kotlin
 fun main(){
   println("No, yo pac.\n Vos zacata pac.\n Yo pac.")
 }
-'''
+```
 
 
 ## Features
