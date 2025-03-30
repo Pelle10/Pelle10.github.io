@@ -9,9 +9,6 @@ seo:
     alt: Project preview
 ---
 
-![Project preview](/project-1.jpg)
-
-
 ## PD1_Ejercicio 1
 
 **Letra del ejercicio**
@@ -108,7 +105,6 @@ public class Multsuma {
     }
     
     public static void main(String[] args) {
-        // Pruebas con valores simples
         double resultado1 = multsuma(1.0, 2.0, 3.0);
         System.out.println("Resultado de multsuma(1.0, 2.0, 3.0): " + resultado1); 
         
@@ -167,10 +163,14 @@ public class Alumno {
   }
 ```
 
-a) Indicar el error al ejecutar la clase Alumno y corregirlo. ¿cómo lo detectaste?\n
-b) Indicar el error al ejecutar el método “recorrer” y corregirlo. ¿cómo lo detectaste?\n
-c) Indicar el error al ejecutar el método “getValor” y corregirlo. ¿cómo lo detectaste?\n
-d) Indicar el error al ejecutar el método “getPrimerCaracter” y corregirlo. ¿cómo lo detectaste?\n
+a) Indicar el error al ejecutar la clase Alumno y corregirlo. ¿cómo lo detectaste?
+
+b) Indicar el error al ejecutar el método “recorrer” y corregirlo. ¿cómo lo detectaste?
+
+c) Indicar el error al ejecutar el método “getValor” y corregirlo. ¿cómo lo detectaste?
+
+d) Indicar el error al ejecutar el método “getPrimerCaracter” y corregirlo. ¿cómo lo detectaste?
+
 e) Indicar el error al ejecutar el método “paraAString” y corregirlo. ¿cómo lo detectaste?
 
 ```kotlin
