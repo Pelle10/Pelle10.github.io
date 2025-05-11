@@ -7,6 +7,8 @@ seo:
   image:
     src: '/project-3.jpg'
 ---
+# EJERCICIO 1
+
 2)
 
 a)
@@ -62,4 +64,24 @@ FIN FUNCION
 
  Número total de nodos únicos, que depende de cuántas palabras comparten letras. Aproximadamente 50 nodos considerando repeticiones de letras.
 
+´´´
+
+# EJERCICIO 2
+
+´´´kotlin
+FUNCION BuscarPalabra(trie, palabra)
+    nodo ← trie.raiz
+    PARA CADA letra EN palabra
+        SI nodo NO tiene hijo con esa letra
+            RETORNAR "La palabra no se encuentra en el libro"
+        FIN SI
+        nodo ← nodo.hijo(letra)
+    FIN PARA
+
+    SI nodo.esPalabraFinal
+        RETORNAR nodo.paginas
+    FIN SI
+
+    RETORNAR "La palabra no se encuentra en el libro"
+FIN FUNCION
 ´´´
