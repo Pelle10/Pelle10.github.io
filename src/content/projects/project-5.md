@@ -18,16 +18,19 @@ a)
 
 b)
 ´´´kotlin
+
  Precondiciones:
 - Tener el texto con palabras y sus páginas.
 - El Trie debe estar vacío antes de empezar.
  Postcondiciones:
 - El Trie almacenará todas las palabras con sus páginas asociadas.
 - Cada búsqueda devolverá las páginas correctas.
+
 ´´´
 
 c)Pseudocodigo
 ´´´kotlin
+
 FUNCION InsertarPalabra(trie, palabra, paginas)
     nodo ← trie.raiz
     PARA CADA letra EN palabra
@@ -40,10 +43,12 @@ FUNCION InsertarPalabra(trie, palabra, paginas)
     nodo.esPalabraFinal ← verdadero
     nodo.paginas.agregar(paginas)
 FIN FUNCION
+
 ´´´
 
 3)
 ´´´kotlin
+
 # Comparaciones para buscar "Programa"
  
  Se comparan 8 caracteres (P-R-O-G-R-A-M-A).
@@ -69,6 +74,7 @@ FIN FUNCION
 # EJERCICIO 2
 
 ´´´kotlin
+
 FUNCION BuscarPalabra(trie, palabra)
     nodo ← trie.raiz
     PARA CADA letra EN palabra
@@ -84,4 +90,5 @@ FUNCION BuscarPalabra(trie, palabra)
 
     RETORNAR "La palabra no se encuentra en el libro"
 FIN FUNCION
+
 ´´´

@@ -12,6 +12,7 @@ seo:
 
 1)
 ´´´kotlin
+
 FUNCION Insertar(unaEtiqueta, etiquetaPadre)
     SI raiz ES nulo Y etiquetaPadre ES vacía
         raiz ← CrearNodo(unaEtiqueta)
@@ -37,17 +38,21 @@ FUNCION Insertar(unaEtiqueta, etiquetaPadre)
 
     RETORNAR verdadero
 FIN FUNCION
+
 ´´´
 
 2)
 ´´´kotlin
+
 - Prueba para Insertar: Vamos a comprobar si podemos agregar correctamente una nueva unidad al organigrama. Si el árbol está vacío, la primera unidad debería convertirse en la raíz. Si ya hay otras unidades, la nueva debe colocarse en el lugar correcto, como hija o hermana de otra ya existente.
 - Prueba para Buscar: Queremos asegurarnos de que el programa encuentra una unidad cuando la buscamos. Si la unidad existe, debe devolverla. Si intentamos buscar algo que no está en el organigrama, el resultado debería ser "no encontrado".
 - Prueba para listarIndentado: Vamos a revisar si el organigrama se muestra bien, con cada unidad en su nivel correcto y bien organizada. Así podremos ver claramente qué unidades dependen de cuáles.
+
 ´´´
 
 3)
 ´´´kotlin
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
@@ -65,11 +70,13 @@ class TArbolGenericoTest {
         arbol.listarIndentado(); // Deberia de imprimir correctamente
     }
 }
+
 ´´´
 
 4)
 
 ´´´kotlin
+
 class TNodoArbolGenerico {
     String etiqueta;
     TNodoArbolGenerico primerHijo, hermanoDerecho;
@@ -129,10 +136,12 @@ class TArbolGenerico {
         listarRecursivo(nodo.hermanoDerecho, nivel);
     }
 }
+
 ´´´
 
 5)
 ´´´kotlin
+
 TArbolGenerico arbol = new TArbolGenerico();
 arbol.insertar("RECTORÍA", "");
 arbol.insertar("VICERRECTORÍA ACADÉMICA", "RECTORÍA");
@@ -140,15 +149,20 @@ arbol.insertar("VICERRECTORÍA ADMINISTRATIVA", "RECTORÍA");
 arbol.insertar("FACULTAD DE INGENIERÍA", "VICERRECTORÍA ACADÉMICA");
 arbol.insertar("FACULTAD DE CIENCIAS EMPRESARIALES", "VICERRECTORÍA ACADÉMICA");
 arbol.insertar("DEPARTAMENTO DE RECURSOS HUMANOS", "VICERRECTORÍA ADMINISTRATIVA");
+
 ´´´
 
 6)
 ´´´kotlin
+
 System.out.println(arbol.buscar("FACULTAD DE INGENIERÍA") != null ? "Encontrado" : "No encontrado");
 System.out.println(arbol.buscar("UNIDAD INVENTADA") != null ? "Encontrado" : "No encontrado");
+
 ´´´
 
 7)
 ´´´kotlin
+
 arbol.listarIndentado();
+
 ´´´

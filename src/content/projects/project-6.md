@@ -12,6 +12,7 @@ seo:
 
 Paso 1)
 ´´´kotlin
+
 import java.util.*;
 
 class TrieNode {
@@ -19,10 +20,12 @@ class TrieNode {
     boolean esPalabraFinal = false;
     Set<Integer> paginas = new TreeSet<>(); // Almacena páginas ordenadas
 }
+
 ´´´
 
 Paso2)
 ´´´kotlin
+
 FUNCION IndizarLibro(trie, archivoLibro)
     pagina ← 1
     lineas ← 0
@@ -40,9 +43,11 @@ FUNCION IndizarLibro(trie, archivoLibro)
         FIN SI
     FIN PARA
 FIN FUNCION
+
 ´´´
 
 ´´´kotlin
+
 import java.io.*;
 
 class Trie {
@@ -72,20 +77,24 @@ class Trie {
         return linea.toLowerCase().replaceAll("[^a-z]", " ").split("\\s+");
     }
 }
+
 ´´´
 
 Paso 3)
 
 ´´´kotlin
+
 FUNCION ImprimirIndice(trie)
     palabras ← ObtenerPalabrasOrdenadas(trie)
     PARA CADA palabra EN palabras
         IMPRIMIR palabra + " → " + paginas de la palabra
     FIN PARA
 FIN FUNCION
+
 ´´´
 
 ´´´kotlin
+
 public void imprimirIndice() {
     imprimirRecursivo(raiz, new StringBuilder());
 }
@@ -101,26 +110,32 @@ private void imprimirRecursivo(TrieNode nodo, StringBuilder palabra) {
         palabra.deleteCharAt(palabra.length() - 1);
     }
 }
+
 ´´´
 
 Paso 4)
 
 ´´´kotlin
+
 Trie trie = new Trie();
 trie.indizarLibro("libro_prueba.txt");
 trie.imprimirIndice();
+
 ´´´
 
 Paso 5)
 
 ´´´kotlin
+
 Trie trie = new Trie();
 trie.indizarLibro("libro.txt");
 trie.imprimirIndice();
+
 ´´´
 
 (codigo completo)
 ´´´kotlin
+
 import java.io.*;
 import java.util.*;
 
@@ -214,11 +229,13 @@ public class IndiceLibro {
         }
     }
 }
+
 ´´´
 
 # EJERCICIO 2
 
 ´´´kotlin
+
 public String buscar(String palabra) {
     palabra = palabra.toLowerCase().replaceAll("[^a-z]", " "); // Limpiar palabra
     TrieNode nodo = raiz;
@@ -238,4 +255,5 @@ public String buscar(String palabra) {
         return "La palabra '" + palabra + "' NO se encuentra en el índice. Comparaciones realizadas: " + comparaciones;
     }
 }
+
 ´´´
